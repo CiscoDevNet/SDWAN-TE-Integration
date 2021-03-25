@@ -1,4 +1,10 @@
-vmanage_host:
+# vManage Connectivity Info
+
+vmanage_host: 
 vmanage_port: 
-vmanage_username: 
+vmanage_username:
 vmanage_password:
+
+# Central Policy name
+
+central_policy_name:

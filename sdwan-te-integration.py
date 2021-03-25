@@ -73,7 +73,7 @@ def policy_activation():
 
         session = Authentication(host=vmanage_host, port=vmanage_port, user=username, password=password).login()
 
-        name = "Global-Policy-v4"
+        name = config["central_policy_name"]
 
         vmanage_central_policy = CentralPolicy(session, vmanage_host, vmanage_port)
         central_policy_dict = vmanage_central_policy.get_central_policy_dict(remove_key=True)

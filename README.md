@@ -10,13 +10,14 @@ To use this code you will need:
 
 * Python 3.7+
 * vManage user login details. (User should have privilege level to activate central policies)
+* Set up Webhook Notification Rules for Alerts on ThousandEyes dashboard (**Reference:** https://docs.thousandeyes.com/product-documentation/alerts/using-webhooks-server-sample-code-included)
 
 # Install and Setup
 
 - Clone the code to local machine.
 
 ```
-git clone https://github.com/suchandanreddy/SDWAN-TE-Integration
+git clone https://github.com/CiscoDevNet/SDWAN-TE-Integration.git
 cd SDWAN-TE-Integration
 ```
 - Setup Python Virtual Environment (requires Python 3.7+)
@@ -38,9 +39,13 @@ vmanage_host:
 vmanage_port: 
 vmanage_username:
 vmanage_password:
+
+# Central Policy name
+
+central_policy_name:
 ```
 
-- Run the script using the command `python3 sdwan-te-integration.py` and once Webhook Server recieves alert from the Thousands it triggers API call to vManage to activate the Central Policy with name `Global-Policy-v4`
+- Run the script using the command `python3 sdwan-te-integration.py` and once Webhook Server recieves alert from the ThousandEyes it triggers API call to vManage to activate the Central Policy with name as provided for the variable `central_policy_name` in `config_details.yaml`
 
 ## Example:
 
