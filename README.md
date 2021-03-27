@@ -45,7 +45,7 @@ vmanage_password:
 central_policy_name:
 ```
 
-- Run the script using the command `python3 sdwan-te-integration.py` and once Webhook Server recieves alert from the ThousandEyes it triggers API call to vManage to activate the Central Policy with name as provided for the variable `central_policy_name` in `config_details.yaml`
+- Run the script using the command `python3 sdwan-te-integration.py` and once Webhook Server receives alert from the ThousandEyes it triggers API call to vManage to activate the Central Policy with name as provided for the variable `central_policy_name` in `config_details.yaml`
 
 ## Example:
 
